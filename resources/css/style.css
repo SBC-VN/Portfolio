@@ -46,13 +46,33 @@ body {
 }
 
 #v-nav-text {
+    display: inline-block;
     color: #0c1f7bba;
     font-size: x-large;
     font-weight: 1000;
 }
 
-#portfolio-view {
-    padding: 2%;
+.v-profile-text {
     font-weight: 700;
     color: #0c1f7bba;
 }
+
+.profile-row {
+    display: block;
+    width:98%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+
+/* @media screen and (max-width: 830px) {
+    #portfolio-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .media {
+        margin-right: 0%;
+        box-sizing: unset;
+    }
+} */
