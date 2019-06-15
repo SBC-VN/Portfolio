@@ -1,6 +1,7 @@
 // Dependencies
 // =============================================================
 var path = require("path");
+var PortfolioItems = require("../model/portfolioModel.js");
 
 // Routes
 // =============================================================
