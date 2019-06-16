@@ -28,7 +28,6 @@ module.exports = function(app) {
   app.get("/portfolio", function(req, res) {
     PortfolioItems.find({}).sort({sequence:1})
                             .then(function(dbItems) {
-                              console.log("Calling portfolio",dbItems);
                               res.render("portfolio", {dbItems});
                             });
   });
@@ -48,6 +47,13 @@ module.exports = function(app) {
   app.get("/resources/img/:file", function(req, res) {
     // __dirname = ..\Portfolio\routes
     var reqfile = path.join(__dirname, "../resources/img/" + req.params.file);
+    res.sendFile(reqfile);
+  });
+
+  // Script file route
+  app.get("/resources/script/:file", function(req, res) {
+    // __dirname = ..\Portfolio\routes
+    var reqfile = path.join(__dirname, "../resources/script/" + req.params.file);
     res.sendFile(reqfile);
   });
 };
