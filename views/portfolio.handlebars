@@ -1,5 +1,23 @@
-<div class="container is-fluid">
-  {{#each dbItems}}
-  {{> item/item-block}}
-  {{/each}}
+<div class="container is-fluid" id="profile-container">
+  <row class="portfolio-row">
+      <div class="columns">
+          <div class="column">
+          <h2>Title</h2>
+          </div>
+          <div class="column">
+          <h2>Description</h2>
+          </div>
+          <div class="column">
+            <h2>Links</h2>
+          </div>
+          <div class="column">
+              <h2>Technologies used</h2>
+          </div>
+      </div>
+  </row>
+  <div id="item-container">
+    {{#each dbItems}}
+    {{> item/item-block}}
+    {{/each}}
+  </div>
 </div>

@@ -16,7 +16,7 @@ fs.readFile('data.txt', 'utf8', function(err, contents) {
             title: fields[1],
             description: fields[2],
             repolink: fields[3],
-            statelink: fields[4],
+            sitelink: fields[4],
             iconname: fields[5],
             techs: fields[6].split(',')
         }

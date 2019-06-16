@@ -3,7 +3,7 @@
   <div class="modal-card">
     <header class="modal-card-head">
       <p class="modal-card-title">Contact Me</p>
-      <button class="delete" aria-label="close"></button>
+      <button class="delete" id="modal-close-x" aria-label="close"></button>
     </header>
     <section class="modal-card-body">
 
@@ -11,14 +11,14 @@
         <div class="field">
         <label class="label">Name</label>
         <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <input class="input" id="modal-name-field" type="text" placeholder="Text input">
         </div>
         </div>
 
         <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input class="input is-danger" id="modal-email-field" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
             </span>
@@ -32,15 +32,15 @@
         <div class="field">
         <label class="label">Message</label>
         <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" id="modal-text-field"  placeholder="Textarea"></textarea>
         </div>
         </div>
         
          {{!-- End of the modal's form --}}
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">Submit</button>
-      <button class="button">Cancel</button>
+      <button class="button is-success" id="modal-submit">Submit</button>
+      <button class="button" id="model-cancel">Cancel</button>
     </footer>
   </div>
 </div>

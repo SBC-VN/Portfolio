@@ -22,6 +22,11 @@ body {
     position: fixed;
 }
 
+#main-container{
+    height: 100%;
+    width: 100%;
+}
+
 .v-navbar{
     display: block;
     margin-left: 1%;
@@ -72,6 +77,16 @@ body {
 .profile-image {
     max-width: 250px;
     height: 250px;
+}
+
+#profile-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+#item-container {
+    overflow: scroll;
+    height: 100%;
 }
 
 @media screen and (max-width: 818px) {
