@@ -4,18 +4,19 @@
 // ******************************************************************************
 // *** Dependencies
 // =============================================================
-var express = require("express");
+const express = require("express");
+const mongoose = require("mongoose");
 
 // Sets up the Express App
 // =============================================================
-var app = express();
-var PORT = process.env.PORT || 8080;
+const app = express();
+let PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var exphbs = require("express-handlebars");
+let exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -24,6 +25,7 @@ app.set("view engine", "handlebars");
 // =============================================================
 require("./routes/html-routes.js")(app);
 
+mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
 // Run the site!
 // =============================================================
 app.listen(PORT, function() {

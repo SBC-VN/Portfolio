@@ -16,22 +16,20 @@ const PortfolioSchema = new Schema({
     description: {
         type: String,
         trim: true,
-        required: "Title is Required"
+        required: "Description is Required"
       },
     repolink: {
         type: String,
         trim: true,
-        required: "Title is Required"
+        required: "RepoLink is Required"
       },
     sitelink: {
         type: String,
-        trim: true,
-        required: "Title is Required"
       },
     iconname: {
         type: String,
         trim: true,
-        required: "Title is Required"
+        required: "Icon Name is Required"
       },
     techs : { type : Array , "default" : [] }
 });

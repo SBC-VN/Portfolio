@@ -1,7 +1,8 @@
 // Dependencies
 // =============================================================
-var path = require("path");
-var PortfolioItems = require("../model/portfolioModel.js");
+const path = require("path");
+const mongoose = require("mongoose");
+const PortfolioItems = require("../model/portfolioModel.js");
 
 // Routes
 // =============================================================
@@ -9,14 +10,27 @@ module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // default route leads to handlebar profile page.
+  // default route leads to handlebar summary page.
   app.get("/", function(req, res) {
-    res.render("profile", {});
+    res.render("summary", {});
   });
 
-  // profile route also leads to profile
-  app.get("/profile", function(req, res) {
-    res.render("profile", {});
+  // summary route also leads to summary page
+  app.get("/summary", function(req, res) {
+    res.render("summary", {});
+  });
+  
+  // Index route also leads to summary page
+  app.get("/index", function(req, res) {
+    res.render("summary", {});
+  });
+
+  app.get("/portfolio", function(req, res) {
+    PortfolioItems.find({}).sort({sequence:1})
+                            .then(function(dbItems) {
+                              console.log("Calling portfolio",dbItems);
+                              res.render("portfolio", {dbItems});
+                            });
   });
   
 
