@@ -1,0 +1,13 @@
+1,Psychic Game,A guessing game involving reading simple user input,https://github.com/SBC-VN/Psychic-Game,https://sbc-vn.github.io/Psychic-Game/,psychicgame.png,css html5 javascript
+2,Word Guess Game,A game very similar to hangman that involves some user input and screen changes,https://github.com/SBC-VN/Word-Guess-Game,https://sbc-vn.github.io/Word-Guess-Game/,hangman.png,css html5 javascript
+3,Starwars Game,A simple game involving random numbers and pleanty of DOM manipulation,https://github.com/SBC-VN/Star-Wars-Game,https://sbc-vn.github.io/Star-Wars-Game/,starwarsgame.png,css html5 javascript
+4,Trivia Game,"A game involving timers, questions, and more DOM manipulation",https://github.com/SBC-VN/TriviaGame,https://sbc-vn.github.io/TriviaGame/,triviagame.png,css html5 javascript
+5,GifTastic,An application that searches giphy using its API for keywords that you can add to.  Uses local storage to save your searches.,https://github.com/SBC-VN/GIFTastic,https://sbc-vn.github.io/GIFTastic/,giftastic.png,css html5 javascript ajax
+6,Multiplayer RPS,Rock Paper Scissors with chat,https://github.com/SBC-VN/RPS-Multiplayer,https://sbc-vn.github.io/RPS-Multiplayer/,rps-multi.png,css html5 javascript firebase
+7,Bucket List,A team project where we implemented an online bucket list with maps,https://github.com/SBC-VN/group-project-1,https://sbc-vn.github.io/group-project-1/,bucketlist.png,css html5 javascript ajax googleapis
+8,Liri,First node.js back end application involving command recognition,https://github.com/SBC-VN/liri-node-app,,liri.png,node js
+9,bamazon,Old style inventory management system,https://github.com/SBC-VN/bamazon,,bamazon.png,node js mysql
+10,Friend Finder,App to find friends using express - first front & back end node app.,https://github.com/SBC-VN/FriendFinder,https://sbcvn-friendfinder.herokuapp.com/,friendfinder.png,nodejs  express  heroku
+11,Eat-Da-Burger,Burger Eating application.  New thing: handlebars.,https://github.com/SBC-VN/eat-da-burger,https://sbnvneatdaburger.herokuapp.com/,eatdaburger.png,nodejs  express  handlebars  mysql  heroku
+12,Syndir,Our second team project where we implemented a friend finder application using sentiment analysis on the questions.  Chat enabled.,https://github.com/SBC-VN/GroupProject2,https://synder.herokuapp.com/,syndir.png,nodejs  express  handlebars  mysql  heroku  firebase
+13,Portfolio,This application.  New technology: mongo & mongoose,https://github.com/SBC-VN/Portfolio,,portfolio.png,nodejs  express  handlebars  mongo  heroku

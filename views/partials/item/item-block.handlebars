@@ -1,7 +1,7 @@
 <row class="portfolio-row">
     <div class="columns">
         <div class="column">
-        {{title}}
+        <strong>{{title}}</strong>
         <img src="/resources/img/{{iconname}}">
         </div>
         <div class="column">
@@ -9,14 +9,16 @@
         </div>
         <div class="column">
             <p>
-                {{repolink}}
+                <a href="{{repolink}}">GitHub Repo</a>                
             </p>
-            <p>
-                {{sitelink}}
-            </p>
+            {{#if sitelink}}
+                <p>
+                    <a href="{{sitelink}}">Live Version</a>
+                </p>
+             {{/if}}
         </div>
         <div class="column">
-            Technologies used: {{techs}}
+            {{techs}}
         </div>
     </div>
 </row>

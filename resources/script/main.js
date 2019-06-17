@@ -1,7 +1,3 @@
-$("#contact-button").on("click",function(event) {
-    $("#contact-modal").css("display","block");
-});
-
 $("#modal-close-x").on("click",function(event) {
     $("#contact-modal").css("display","none");
 });
@@ -21,5 +17,18 @@ $("#modal-submit").on("click",function(event) {
         message: contactText
     }
 
-    console.log(contactRec);
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "/api/contact",
+        data: contactRec 
+      }).then(function(data) {
+        console.log("API Contact response",data);
+      });
+});
+
+$( document ).ready(function() {
+    $("#contact-button").on("click",function(event) {
+        $("#contact-modal").css("display","block");
+    });
 });

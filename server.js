@@ -24,6 +24,7 @@ app.set("view engine", "handlebars");
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
 // Run the site!

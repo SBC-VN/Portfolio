@@ -5,11 +5,11 @@ const PortfolioItems = require("./portfolioModel.js");
 
 mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
  
-fs.readFile('data.txt', 'utf8', function(err, contents) {
+fs.readFile('data.csv', 'utf8', function(err, contents) {
     let filelines = contents.split('\r\n');
     filelines.forEach(line =>    
     {
-        let fields = line.split(';');
+        let fields = line.split(',');
         // techs.forEach(tech => 
         let profItem = {
             sequence: fields[0],
@@ -18,7 +18,7 @@ fs.readFile('data.txt', 'utf8', function(err, contents) {
             repolink: fields[3],
             sitelink: fields[4],
             iconname: fields[5],
-            techs: fields[6].split(',')
+            techs: fields[6]
         }
 
         PortfolioItems.find({sequence : profItem.sequence})
