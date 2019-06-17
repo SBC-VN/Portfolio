@@ -26,7 +26,9 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
-mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
+const MOGODB_URL = process.env.MOGODB_URL || "mongodb://localhost/portfoliodb"
+
+mongoose.connect(MOGODB_URL, { useNewUrlParser: true });
 // Run the site!
 // =============================================================
 app.listen(PORT, function() {
